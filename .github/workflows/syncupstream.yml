@@ -1,12 +1,11 @@
 name: Merge upstream branches
 
 on:
+  branches:
+    - "playground/frawhide"
   schedule:
     - cron:  '*/5 * * * *'
-  branches:
-      - "playground/frawhide"
   workflow_dispatch:
-      - "playground/frawhide"
 
 jobs:
   merge:
