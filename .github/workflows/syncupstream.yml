@@ -1,8 +1,6 @@
 name: Merge upstream branches
 
 on:
-  branches:
-    - "playground/frawhide"
   schedule:
     - cron:  '*/5 * * * *'
   workflow_dispatch:
