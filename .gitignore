@@ -1,2 +1,8 @@
 anda-build/
 **/*.tar*
+.github/workflows/autobuild.yml
+.github/workflows/sync.yml
+.github/workflows/update.yml
+.github/workflows/update-branch.yml
+.github/workflows/update-nightly.yml
+.github/workflows/update-weekly.yml
