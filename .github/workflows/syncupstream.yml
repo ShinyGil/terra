@@ -17,7 +17,7 @@ jobs:
           git config --global merge.ours.driver true
 
           
-          git pull --unshallow
+          git pull --unshallow --ff-only
                                
                                 
                                 
