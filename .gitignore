@@ -1,6 +1,2 @@
 anda-build/
 **/*.tar*
-.github/workflows/syncupstream.yml
-.github/workflows/autobuild.yml
-.github/workflows/json-build.yml
-.github/workflows/build.yml
