@@ -145,6 +145,7 @@ BuildRequires:  pkgconfig(lrdf)
 BuildRequires:  pkgconfig(ltc) >= 1.1.4
 BuildRequires:  pkgconfig(mjpegtools)
 BuildRequires:  pkgconfig(nice) >= 0.1.20
+BuildRequires:  pkgconfig(neon) <= 0.33.99
 BuildRequires:  pkgconfig(neon) >= 0.27
 BuildRequires:  pkgconfig(nettle) >= 3.0
 BuildRequires:  pkgconfig(nice) >= 0.1.14
