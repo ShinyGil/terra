@@ -143,6 +143,7 @@ BuildRequires:  pkgconfig(libxml-2.0) >= 2.8
 BuildRequires:  pkgconfig(lilv-0) >= 0.22
 BuildRequires:  pkgconfig(lrdf)
 BuildRequires:  pkgconfig(ltc) >= 1.1.4
+BuildRequires:  pkgconfig(mjpegtools)
 BuildRequires:  pkgconfig(nice) >= 0.1.20
 BuildRequires:  pkgconfig(neon) >= 0.27
 BuildRequires:  pkgconfig(nettle) >= 3.0
