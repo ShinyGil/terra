@@ -42,8 +42,8 @@ Provides:       %{name}-free-libs = %{?epoch}:%{version}-%{release}
 Provides:       %{name}-free-libs%{?_isa} = %{?epoch}:%{version}-%{release}
 BuildRequires:  gcc-c++
 BuildRequires:  meson >= 0.62
-BuildRequires:  gstreamer1-devel >= %{version}
-BuildRequires:  gstreamer1-plugins-base-devel >= %{version}
+BuildRequires:  gstreamer1-devel
+BuildRequires:  gstreamer1-plugins-base-devel
 BuildRequires:  bzip2-devel
 BuildRequires:  check
 BuildRequires:  exempi-devel
