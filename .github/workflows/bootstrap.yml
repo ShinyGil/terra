@@ -46,18 +46,3 @@ jobs:
 
       - name: Build Andaman
         run: anda build -rrpmbuild anda/tools/buildsys/anda/pkg
-
-      - name: Upload packages to subatomic
-        run: |
-          subatomic-cli upload --prune \
-            --server https://subatomic.fyralabs.com \
-            --token ${{ secrets.SUBATOMIC_TOKEN }} \
-            terra${{ matrix.version }} anda-build/rpm/rpms/*
-
-      - name: Upload source packages to subatomic
-        if: github.event_name == 'push'
-        run: |
-          subatomic-cli upload --prune \
-            --server https://subatomic.fyralabs.com \
-            --token ${{ secrets.SUBATOMIC_TOKEN }} \
-            terra${{ matrix.version }}-source anda-build/rpm/srpm/*
