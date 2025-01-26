@@ -27,7 +27,7 @@ jobs:
 
           git fetch upstream f41
 
-          git checkout f41
+          git checkout origin/f41
           git merge --no-edit upstream/f41
           git push origin f41
 
