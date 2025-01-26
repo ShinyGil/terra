@@ -47,7 +47,7 @@ mv {LICENSE,README.md} cmd
 
 
 %build
-go build -x -o walker -compressdwarf=false
+go build -x -o walker -ldflags -compressdwarf=false
 
 %install
 #gopkginstall
