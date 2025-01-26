@@ -33,12 +33,12 @@ jobs:
 
           git fetch upstream f40
 
-          git checkout f40
+          git checkout --track origin/f40
           git merge --no-edit upstream/f40
           git push origin f40
 
           git fetch upstream el10
 
-          git checkout el10
+          git checkout --track origin/el10
           git merge --no-edit upstream/el10
           git push origin el10
