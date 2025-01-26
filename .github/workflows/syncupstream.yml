@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Merge frawhide
+      - name: Merge upstream
         run: |
           git config --global user.name 'ShinyGil'
           git config --global user.email 'rockgrub@protonmail.com'
@@ -25,45 +25,18 @@ jobs:
           git merge --no-edit upstream/frawhide
           git push origin frawhide
 
-      - name: Merge f41
-        run: |
-          git config --global user.name 'ShinyGil'
-          git config --global user.email 'rockgrub@protonmail.com'
-          git config --global merge.ours.driver true
-
-          git pull --unshallow
-                               
-          git remote add upstream https://github.com/terrapkg/packages
           git fetch upstream f41
 
           git checkout f41
           git merge --no-edit upstream/f41
           git push origin f41
 
-      - name: Merge f40
-        run: |
-          git config --global user.name 'ShinyGil'
-          git config --global user.email 'rockgrub@protonmail.com'
-          git config --global merge.ours.driver true
-
-          git pull --unshallow
-                               
-          git remote add upstream https://github.com/terrapkg/packages
           git fetch upstream f40
 
           git checkout f40
           git merge --no-edit upstream/f40
           git push origin f40
 
-      - name: Merge el10
-        run: |
-          git config --global user.name 'ShinyGil'
-          git config --global user.email 'rockgrub@protonmail.com'
-          git config --global merge.ours.driver true
-
-          git pull --unshallow
-                               
-          git remote add upstream https://github.com/terrapkg/packages
           git fetch upstream el10
 
           git checkout el10
