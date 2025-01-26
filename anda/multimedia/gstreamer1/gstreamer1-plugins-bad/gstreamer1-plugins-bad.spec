@@ -243,7 +243,6 @@ Obsoletes:      gst-transcoder-devel < 1.16.0-4
   -D applemedia=enabled \
   -D asfmux=enabled \
   -D asio=enabled \
-  -D asio-sdk-path=enabled \
   -D assrender=enabled \
   -D audiobuffersplit=enabled \
   -D audiofxbad=enabled \
