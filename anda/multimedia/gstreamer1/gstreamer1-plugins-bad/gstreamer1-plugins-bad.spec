@@ -42,8 +42,8 @@ Provides:       %{name}-free-libs = %{?epoch}:%{version}-%{release}
 Provides:       %{name}-free-libs%{?_isa} = %{?epoch}:%{version}-%{release}
 BuildRequires:  gcc-c++
 BuildRequires:  meson >= 0.62
-BuildRequires:  gstreamer1-devel
-BuildRequires:  gstreamer1-plugins-base-devel
+BuildRequires:  gstreamer1-devel >= %{version}
+BuildRequires:  gstreamer1-plugins-base-devel >= %{version}
 BuildRequires:  bzip2-devel
 BuildRequires:  check
 BuildRequires:  exempi-devel
@@ -82,7 +82,7 @@ BuildRequires:  pkgconfig(glesv2)
 BuildRequires:  pkgconfig(gmodule-export-2.0)
 BuildRequires:  pkgconfig(gmodule-no-export-2.0)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
-BuildRequires:  pkgconfig(gstreamer-1.0)
+BuildRequires:  pkgconfig(gstreamer-1.0) >= %{version}
 BuildRequires:  pkgconfig(gstreamer-allocators-1.0)
 BuildRequires:  pkgconfig(gstreamer-app-1.0)
 BuildRequires:  pkgconfig(gstreamer-audio-1.0)
