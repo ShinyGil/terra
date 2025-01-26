@@ -1,5 +1,6 @@
+%global fulldate 2024-11-29
 %global commit ee8526451ca1bb4957702de2f46138b63151f34c
-%global commit_date 20241129
+%global commit_date %(echo %{fulldate} | sed 's/-//g')
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           gstreamer1-plugin-icamerasrc
