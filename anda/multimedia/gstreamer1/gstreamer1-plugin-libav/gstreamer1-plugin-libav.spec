@@ -1,8 +1,7 @@
 Name:       gstreamer1-plugin-libav
 Version:    1.24.11
 Release:    1%{?dist}
-Epoch:      1
-Summary:    GStreamer Libav plug-in
+Summary:    GStreamer Libav plugin
 License:    LGPLv2+
 URL:        https://gstreamer.freedesktop.org/modules/gst-libav.html
 
@@ -29,7 +28,7 @@ BuildRequires:  yasm
 %endif
 
 %description
-The GStreamer libav plugin contains a plugin using the libav library.
+GStreamer plugin containing libav library code.
 
 %prep
 %autosetup -p1 -n gst-libav-%{version}
