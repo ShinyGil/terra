@@ -3,7 +3,7 @@
 %global         majorminor 1.0
 
 Name:           gstreamer1-plugins-bad-freeworld
-Version:        1.25.1
+Version:        1.24.11
 Release:        1%{?dist}
 Epoch:          1
 Summary:        GStreamer streaming media framework "bad" plugins

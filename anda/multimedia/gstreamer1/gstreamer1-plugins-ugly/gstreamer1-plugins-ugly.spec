@@ -1,7 +1,7 @@
 %global         majorminor 1.0
 
 Name:           gstreamer1-plugins-ugly-freeworld
-Version:        1.24.10
+Version:        1.24.11
 Release:        1%{?dist}
 Epoch:          1
 Summary:        GStreamer streaming media framework "ugly" plugins
