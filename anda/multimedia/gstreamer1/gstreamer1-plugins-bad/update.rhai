@@ -4,4 +4,4 @@ gstreamer1-plugins-bad-free&status=stable&releases=${release}&rows_per_page=1&pa
 rpm.version(find(`
 gstreamer1-plugins-bad-free-([\d.]+)`, ver, 1));
 rpm.release(find(`
-gstreamer1-plugins-ugly-bad-[\d.]+-([\d.])`, ver, 1));
+gstreamer1-plugins-bad-free[\d.]+-([\d.])`, ver, 1));
