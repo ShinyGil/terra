@@ -1,6 +1,6 @@
-%global commit b39b5df3a945f4f3a9b98146eb4c0940c9d05188
+%global commit d4150dea3c0e1f60177b3bb47faea114ba221663
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global commit_date 20250113
+%global commit_date 20250125
 %global ver 0.6.5.0
 
 # We aren't using Mono but RPM expected Mono
@@ -64,6 +64,7 @@ cp -r bin "%{buildroot}/%{_prefix}/lib/opentabletdriver"
 %{_bindir}/otd
 %{_bindir}/otd-daemon
 %{_bindir}/otd-gui
+%{_datadir}/libinput/30-vendor-opentabletdriver.quirks
 %{_prefix}/lib/modprobe.d/99-opentabletdriver.conf
 %{_prefix}/lib/modules-load.d/opentabletdriver.conf
 %{_prefix}/lib/opentabletdriver/*

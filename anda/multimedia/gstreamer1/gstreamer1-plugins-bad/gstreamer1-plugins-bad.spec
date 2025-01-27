@@ -3,7 +3,7 @@
 %global         majorminor 1.0
 
 Name:           gstreamer1-plugins-bad-freeworld
-Version:        1.24.10
+Version:        1.25.1
 Release:        1%{?dist}
 Epoch:          1
 Summary:        GStreamer streaming media framework "bad" plugins
@@ -82,7 +82,7 @@ BuildRequires:  pkgconfig(glesv2)
 BuildRequires:  pkgconfig(gmodule-export-2.0)
 BuildRequires:  pkgconfig(gmodule-no-export-2.0)
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
-BuildRequires:  pkgconfig(gstreamer-1.0)
+BuildRequires:  pkgconfig(gstreamer-1.0) >= %{version}
 BuildRequires:  pkgconfig(gstreamer-allocators-1.0)
 BuildRequires:  pkgconfig(gstreamer-app-1.0)
 BuildRequires:  pkgconfig(gstreamer-audio-1.0)
@@ -143,6 +143,7 @@ BuildRequires:  pkgconfig(libxml-2.0) >= 2.8
 BuildRequires:  pkgconfig(lilv-0) >= 0.22
 BuildRequires:  pkgconfig(lrdf)
 BuildRequires:  pkgconfig(ltc) >= 1.1.4
+BuildRequires:  pkgconfig(mjpegtools)
 BuildRequires:  pkgconfig(nice) >= 0.1.20
 BuildRequires:  pkgconfig(neon) >= 0.27
 BuildRequires:  pkgconfig(nettle) >= 3.0
@@ -242,7 +243,6 @@ Obsoletes:      gst-transcoder-devel < 1.16.0-4
   -D applemedia=enabled \
   -D asfmux=enabled \
   -D asio=enabled \
-  -D asio-sdk-path=enabled \
   -D assrender=enabled \
   -D audiobuffersplit=enabled \
   -D audiofxbad=enabled \
