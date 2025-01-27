@@ -135,6 +135,10 @@ Recommends:     gobject-introspection
 
 Requires:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
 
+# Fix upgrading from old versions
+Provides:       %{name}.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      %{name}.x86_64 <= %{?epoch:%{epoch}:}%{version}-%{release}
+
 %description
 Steam is a software distribution service with an online store, automated
 installation, automatic updates, achievements, SteamCloud synchronized savegame
@@ -147,6 +151,9 @@ Summary:        Permissions required by Steam for gaming devices
 BuildArch:      noarch
 Provides:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
 Obsoletes:      steam-devices < %{?epoch:%{epoch}:}%{version}-%{release}
+# Fix upgrading from old versions
+Provides:       steam-device.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      steam-devices.x86_64 <= %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description    devices
 Steam is a software distribution service with an online store, automated
