@@ -137,6 +137,7 @@ Requires:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
 
 # Fix upgrading from old versions
 Provides:       %{name}.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      %{name}.x86_64 <= %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description
 Steam is a software distribution service with an online store, automated
@@ -149,10 +150,10 @@ This package contains the installer for the Steam software distribution service.
 Summary:        Permissions required by Steam for gaming devices
 BuildArch:      noarch
 Provides:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
-Obsoletes:      steam-devices < %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      steam-devices <= %{?epoch:%{epoch}:}%{version}-%{release}
 # Fix upgrading from old versions
 Provides:       steam-devices.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
-Provides:       steam-devices.i686 = %{?epoch:%{epoch}:}%{version}-%{release}
+Obsoletes:      steam-devices.x86_64 <= %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description    devices
 Steam is a software distribution service with an online store, automated
