@@ -5,8 +5,8 @@
 
 Name:           gstreamer1-plugin-icamerasrc
 Summary:        GStreamer 1.0 Intel IPU6 camera plugin
-Version:        %{commit_date}.%{shortcommit}
-Release:        1%{?dist}
+Version:        1.0.0
+Release:        1.%{commit_date}git%{shortcommit}%{?dist}
 License:        LGPL-2.1-only
 URL:            https://github.com/intel/icamerasrc/tree/icamerasrc_slim_api
 Source0:        https://github.com/intel/icamerasrc/archive/%{commit}/icamerasrc-%{shortcommit}.tar.gz
