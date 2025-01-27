@@ -136,7 +136,7 @@ Recommends:     gobject-introspection
 Requires:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
 
 # Fix upgrading from old versions
-Obsoletes:      %{name}.x86_64
+Provides:       %{name}.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description
 Steam is a software distribution service with an online store, automated
@@ -151,8 +151,8 @@ BuildArch:      noarch
 Provides:       steam-devices = %{?epoch:%{epoch}:}%{version}-%{release}
 Obsoletes:      steam-devices < %{?epoch:%{epoch}:}%{version}-%{release}
 # Fix upgrading from old versions
-Obsoletes:      steam-devices.x86_64
-Obsoletes:      steam-devices.i686
+Provides:       steam-devices.x86_64 = %{?epoch:%{epoch}:}%{version}-%{release}
+Provides:       steam-devices.i686 = %{?epoch:%{epoch}:}%{version}-%{release}
 
 %description    devices
 Steam is a software distribution service with an online store, automated
