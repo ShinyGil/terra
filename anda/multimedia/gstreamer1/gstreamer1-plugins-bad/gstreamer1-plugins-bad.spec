@@ -228,7 +228,6 @@ Obsoletes:      gst-transcoder-devel < 1.16.0-4
 %autosetup -p1 -n gst-plugins-bad-%{version}
 
 %build
-export buildver=%{version}
 %meson \
   -D accurip=enabled \
   -D adpcmdec=enabled \
@@ -243,9 +242,9 @@ export buildver=%{version}
   -D applemedia=enabled \
   -D asfmux=enabled \
   -D asio=enabled \
-  %if %(buildver) == 1.24.11
+  if [[ "%{version}" == "1.24.11" ]]; then
   -D asio-sdk-path=enabled \
-  %endif
+  fi
   -D assrender=enabled \
   -D audiobuffersplit=enabled \
   -D audiofxbad=enabled \
