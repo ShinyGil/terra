@@ -1,12 +1,12 @@
-%global commit 603639ad44e82afbcd8cdb01d7050abf7c538e9b
+%global commit 04d36361b1a19a3b78b9cbcea5a233ccd56fb4e8
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global commit_date 20250129
+%global commit_date 20250130
 %global public_key RWQlAjJC23149WL2sEpT/l0QKy7hMIFhYdQOFy0Z7z7PbneUgvlsnYcV
 %global cache_dir %{_builddir}/zig-cache
 
 Name:           ghostty-nightly
 Version:        %{commit_date}.%{shortcommit}
-Release:        2%?dist
+Release:        1%?dist
 Summary:        A fast, native terminal emulator written in Zig; this is the Tip (nightly) build.
 License:        MIT AND MPL-2.0 AND OFL-1.1 AND (WTFPL OR CC0-1.0) AND Apache-2.0
 URL:            https://ghostty.org/
